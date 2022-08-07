@@ -38,9 +38,9 @@ global.footer = `© ${package.name} ${new Date().getFullYear()}`
 let session;
 if (opts['server']) require('./server')
 if (opts['test']) {
-    session = './session/test.json'
+    session = '/session/test'
 } else {
-    session = './session/main.json'
+    session = '/session/main'
 }
 
 const msgRetryCounterMap = {}
